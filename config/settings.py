@@ -41,6 +41,7 @@ DJANGO_APPS = [
 
 PROJECT_APPS = [
     'settings.apps.SettingsConfig',
+    'list_todo.apps.ListTodoConfig',
 ]
 
 INSTALLED_APPS = DJANGO_APPS + PROJECT_APPS
