@@ -11,12 +11,13 @@
 <body>
 {% block content %}
 
-    <h1>
-        TODO
-    </h1>
-    <p>
-        {% now "j F Y H:i" %}
-    </p>
+    <div class="row">
+        <div class="col-md">
+            {% for obj in objects_list %}
+                <p>{{ obj.task }}</p>
+            {% endfor %}
+        </div>
+    </div>
 
 {% endblock %}
 
