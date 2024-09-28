@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block title %}
+        Index
+    {% endblock %}
+</head>
+<body>
+{% block content %}
+
+    <h1>
+        TODO
+    </h1>
+    <p>
+        {% now "j F Y H:i" %}
+    </p>
+
+{% endblock %}
+
+</body>
+</html>
