@@ -51,3 +51,4 @@ class ListTodo(TimeStampedModel):
     class Meta:
         verbose_name = 'Задача'
         verbose_name_plural = 'Задачи'
+        ordering = ['-start_time']
