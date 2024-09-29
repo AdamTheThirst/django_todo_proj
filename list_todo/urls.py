@@ -5,5 +5,5 @@ from .views import *
 app_name = 'tasks'
 
 urlpatterns = [
-    path('', index, name='tasks'),
+    path('', index, name='tasks_list'),
 ]
