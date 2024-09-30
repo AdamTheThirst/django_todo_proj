@@ -6,9 +6,14 @@ from .models import ListTodo
 
 __all__ = (
     'index',
+    'TaskDetailView'
 )
 
 def index(request):
     qs = ListTodo.objects.all()
     contest = {'objects_list': qs}
     return render(request, 'index.html', contest)
+
+class TaskDetailView(DetailView):
+    qeriset = ListTodo.objects.all()
+    template_name = 'task_detail.html'
